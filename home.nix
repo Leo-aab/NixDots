@@ -2,7 +2,7 @@
 {
  imports = [
  ./kitty.nix
- ./hypr.nix
+ ./sway.nix
 ./pkgs.nix
  ];
 
