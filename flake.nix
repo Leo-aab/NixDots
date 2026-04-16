@@ -1,5 +1,5 @@
 {
-  description = "Minha configuracao NixOS em Flakes";
+  description = "My Stardust Flakes...!!";
 
   inputs = {
 
