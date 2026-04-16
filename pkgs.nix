@@ -16,7 +16,6 @@
    #hyprland tools
    pavucontrol
    wofi
-   (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
 ];
 
 
