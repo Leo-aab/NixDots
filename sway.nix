@@ -11,7 +11,7 @@
       startup = [
         # Launch Firefox on start
         {command = "firefox";}
-      ];
+     ];
     };
-
-}
+  };   
+}    
