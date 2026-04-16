@@ -2,7 +2,7 @@
 {
  imports = [
  ./kitty.nix
-# ./i3wm.nix
+ ./hypr.nix
 ./pkgs.nix
  ];
 
