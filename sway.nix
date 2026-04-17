@@ -7,7 +7,6 @@
       input * {
           xkb_layout "br"
           xkb_variant "abnt2"
-          xkb_options "caps:escape"
       }
     '';
     wrapperFeatures.gtk = true; 
