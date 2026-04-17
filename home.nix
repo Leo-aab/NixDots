@@ -1,10 +1,10 @@
 { config, pkgs, ... }:
 {
  imports = [
- ./kitty.nix
  ./sway.nix
  ./pkgs.nix
- ./zsh.nix
+ ./terminal/zsh.nix
+ ./terminal/kitty.nix
  ];
 
   home.username = "leo";
