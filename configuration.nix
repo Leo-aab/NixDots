@@ -26,8 +26,11 @@
     LC_TELEPHONE      = "pt_BR.UTF-8";
     LC_TIME           = "pt_BR.UTF-8";
   };
-   
+  
+  #security polkit
+  security.polkit.enable = true; 
   #services for thunar 
+  
   services.udisks2.enable = true;
   services.gvfs.enable = true;
   # Enable experimental Nix features: flakes and the new CLI
