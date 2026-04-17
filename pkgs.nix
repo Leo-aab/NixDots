@@ -20,11 +20,12 @@
    slurp
    wl-clipboard
    libnotify
-
+   
+   #thunar
    thunar
    thunar-archive-plugin
    thunar-volman
-
+   polkit_gnome
 ];
 
 }
