@@ -17,6 +17,7 @@
    #sway tools
    pavucontrol
    #screenshots tools - hypr
+   fuzzel
    grim
    slurp
    wl-clipboard
