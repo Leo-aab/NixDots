@@ -11,33 +11,51 @@
      '';
     wrapperFeatures.gtk = true; 
     config = rec {
-      modifier = "Mod4";
-
+    modifier = "Mod4";
     keybindings = lib.mkOptionDefault {
      "${modifier}+Return" = "exec ${terminal}";
       "${modifier}+Shift+q" = "kill";
        "${modifier}+d" = "exec ${pkgs.fuzzel}/bin/fuzzel";
-        
        #print
        "Print" = "exec ${pkgs.grim}/bin/grim -g \"$(${pkgs.slurp}/bin/slurp)\" - | ${pkgs.wl-clipboard}/bin/wl-copy"; 
 };
-      
+ 
+ #window customizing   
  window = {
-    border = 2;
+    border = 1;
     hideEdgeBorders = "smart";
     titlebar = false;
-  };
+  }; 
+   gaps = {
+   inner = 6;
+   outer = 3;
+
+ };
    colors = {
     focused = {
-      border = "#ff7af6";
-      background = "#ff7af6";
-      text = "#ffffff";
-      indicator = "#2e9ef4";
-      childBorder = "#285577";
+      border = "#ffffff";
+      background = "#ffffff";
+      text = "#000000";
+      indicator = "#d3d3d3";
+      childBorder = "#ffffff";
     };
+    unfocused = {
+       border = "#262626";
+       background = "#262626";
+       text = "#808080";
+       indicator = "#ffffff";
+       childBorder = "#262626";
+};
+     urgent = {
+      border = "#ff0000";
+        background = "#ff0000";
+        text = "#ffffff";
+        indicator = "#ff0000";
+ childBorder = "#ff0000";
+};
   };    
        # terminal
-      terminal = "kitty"; 
+      terminal = "kitty";
       startup = [
         # Launch Firefox on start
         {command = "firefox";}
