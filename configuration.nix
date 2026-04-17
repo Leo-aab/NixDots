@@ -11,7 +11,7 @@
   # Networking
   networking.hostName = "WeAreStars";
   networking.networkmanager.enable = true;
-
+   
   # Locale & timezone
   time.timeZone = "America/Sao_Paulo";
   i18n.defaultLocale = "pt_BR.UTF-8";
@@ -26,7 +26,10 @@
     LC_TELEPHONE      = "pt_BR.UTF-8";
     LC_TIME           = "pt_BR.UTF-8";
   };
-
+   
+  #services for thunar 
+  services.udisks2.enable = true;
+  services.gvfs.enable = true;
   # Enable experimental Nix features: flakes and the new CLI
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 

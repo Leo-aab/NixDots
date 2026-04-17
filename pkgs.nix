@@ -21,9 +21,9 @@
    wl-clipboard
    libnotify
 
-    xfce.thunar
-    xfce.thunar-archive-plugin
-    xfce.thunar-volman
+   thunar
+   thunar-archive-plugin
+   thunar-volman
 
 ];
 
