@@ -65,7 +65,10 @@
     description = "leo";
     extraGroups = [ "networkmanager" "wheel" ];
   };
-
+  
+  programs.zsh.enable = true; 
+  users.users.leo.shell = pkgs.zsh;
+ 
   programs.firefox.enable = true;
 
   # Allow proprietary packages (e.g. drivers, some apps)
