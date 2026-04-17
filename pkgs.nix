@@ -10,7 +10,7 @@
 
    #nixos config
    nil
-   geany 
+   zed-editor
    helix
    git   
    zsh
