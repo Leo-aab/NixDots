@@ -4,7 +4,7 @@
  ./kitty.nix
  ./sway.nix
  ./pkgs.nix
- ./bash.nix
+ ./zsh.nix
  ];
 
   home.username = "leo";

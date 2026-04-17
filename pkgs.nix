@@ -13,6 +13,7 @@
    geany 
    helix
    git   
+   zsh
    #sway tools
    pavucontrol
    #screenshots tools - hypr
