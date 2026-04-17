@@ -8,7 +8,6 @@
    amberol
    
 
-   
    #nixos config
    nil
    geany 
@@ -21,19 +20,11 @@
    slurp
    wl-clipboard
    libnotify
-];
 
-   programs.thunar = {
-   enable = true;
-   plugins = with pkg.xfce; [
-     thunar-archive-plugin
-     thunar-volman
-     thunar-media-tags-plugin
-  
+    xfce.thunar
+    xfce.thunar-archive-plugin
+    xfce.thunar-volman
 
 ];
 
-};
-
-   
 }
