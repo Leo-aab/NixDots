@@ -6,7 +6,7 @@
    vesktop
    vlc
    amberol
-   
+   btop   
 
    #nixos config
    nil
