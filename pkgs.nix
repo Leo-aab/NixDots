@@ -1,12 +1,34 @@
 {config, pkgs, lib, ...}:
 {
-   #home pkgs
-   home.packages = with pkgs; [
-   #internet
-   vesktop
-   vlc
-   amberol
-   btop   
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+{
+  #home pkgs
+  home.packages = with pkgs; [
+    #internet
+    vesktop
+    vlc
+    amberol
+    btop
+
+    #nixos config
+    nil
+    nixd
+    zed-editor
+    helix
+    git
+    zsh
+    #sway tools
+    pavucontrol
+    #screenshots tools - hypr
+    fuzzel
+    grim
+    slurp
+    wl-clipboard
+    libnotify
 
    #nixos config
    nil
