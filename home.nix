@@ -3,7 +3,8 @@
  imports = [
  ./kitty.nix
  ./sway.nix
-./pkgs.nix
+ ./pkgs.nix
+ ./bash.nix
  ];
 
   home.username = "leo";
