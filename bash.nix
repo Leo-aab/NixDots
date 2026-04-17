@@ -4,8 +4,8 @@
    enable = true; 
    
    shellAlases = {
-   nx = "sudo nixos-rebuild switch --flake"
-   fx = "sudo nix flake update --flake"
+   nx = "sudo nixos-rebuild switch --flake";
+   fx = "sudo nix flake update --flake";
 
 
 
