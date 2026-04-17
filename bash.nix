@@ -3,15 +3,13 @@
  programs.bash = {
    enable = true; 
    
-   shellAlases = {
+   shellAliases = {
    nx = "sudo nixos-rebuild switch --flake";
    fx = "sudo nix flake update --flake";
 
 
 
 };
-
-
 };
 
 
