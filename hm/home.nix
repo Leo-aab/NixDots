@@ -5,6 +5,7 @@
  ./pkgs.nix
  ./terminal/zsh.nix
  ./terminal/kitty.nix
+ ./services/gtk.nix
  ];
 
   home.username = "leo";
