@@ -2,7 +2,9 @@
 {
  programs.zsh = {
    enable = true; 
-   
+   enableCompletion = true;
+    autosuggestion.enable = true;
+   syntaxHighlighting.enable = true;   
    shellAliases = {
    nx = "sudo nixos-rebuild switch --flake";
    nixop = "sudo nix-store --optimise";
@@ -14,7 +16,8 @@
     {
       name = "zsh-autocomplete";
       src = pkgs.zsh-autocomplete;
-    }
+      file = "share/zsh-autocomplete/zsh-autocomplete.plugin.zsh";
+      }
   ];
 
 
