@@ -53,10 +53,13 @@
         indicator = "#ff0000";
  childBorder = "#ff0000";
 };
-  };    
-       # terminal
+  };
+          
+        # terminal
       terminal = "kitty";
-      startup = [
+      bars = [];
+       startup = [
+        {command = "waybar";}
         # Launch Firefox on start
         {command = "firefox";}
         {command = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";}

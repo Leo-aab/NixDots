@@ -21,6 +21,7 @@
     git
     zsh
     #sway tools
+    waybar
     pavucontrol
     #screenshots tools - hypr
     fuzzel
