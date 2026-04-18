@@ -9,7 +9,6 @@
  ./terminal/zsh.nix
  ./terminal/kitty.nix
  ./services/gtk.nix
- ./pkgs/spicetify.nix
  ];
 
   home.username = "leo";

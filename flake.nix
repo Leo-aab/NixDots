@@ -7,9 +7,8 @@
      home-manager = {
     url = "github:nix-community/home-manager";
     inputs.nixpkgs.follows = "nixpkgs";
-    inputs.spicetify-nix.url = "github:gerg-l/spicetify-nix";
-
   };
+
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
@@ -22,6 +21,7 @@
           home-manager.nixosModules.home-manager
       {
         home-manager.useGlobalPkgs = true;
+        home-manager.extraSpecialArgs = { inherit inputs; };
         home-manager.useUserPackages = true;
         home-manager.users.leo = import ./hm/home.nix;
       }
