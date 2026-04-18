@@ -1,7 +1,10 @@
 { config, pkgs, ... }:
 {
  imports = [
+  #sway settings 
  ./sway.nix
+ ./wbar.nix
+  #pkgs - terminal configs - services
  ./pkgs.nix
  ./terminal/zsh.nix
  ./terminal/kitty.nix
