@@ -7,6 +7,8 @@
      home-manager = {
     url = "github:nix-community/home-manager";
     inputs.nixpkgs.follows = "nixpkgs";
+    inputs.spicetify-nix.url = "github:gerg-l/spicetify-nix";
+
   };
   };
 
