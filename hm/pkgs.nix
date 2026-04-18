@@ -43,8 +43,5 @@
     nerd-fonts.symbols-only
 
     #tools 
-
-
-   ];
-
+     ];
 }

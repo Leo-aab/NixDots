@@ -73,7 +73,9 @@
 
   # Allow proprietary packages (e.g. drivers, some apps)
   nixpkgs.config.allowUnfree = true;
-
+  nixpkgs.config.permittedInsecurePackages = [
+    "ventoy-1.1.10"
+  ];
   # System-wide packages
   environment.systemPackages = with pkgs; [
     fastfetch
