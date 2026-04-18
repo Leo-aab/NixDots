@@ -43,5 +43,6 @@
     nerd-fonts.symbols-only
 
     #tools 
-     ];
+    ventoy-full
+      ];
 }
