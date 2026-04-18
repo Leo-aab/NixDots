@@ -7,12 +7,14 @@
 {
   #home pkgs
   home.packages = with pkgs; [
-    #internet
+    #internet / media
     vesktop
     vlc
     amberol
     btop
 
+    #MUSSSIXCCCCCSSS
+    spotify
     #nixos config
     nil
     nixd
@@ -34,7 +36,15 @@
     thunar
     thunar-archive-plugin
     thunar-volman
+    tumbler
     polkit_gnome
-  ];
+    
+    #icons fonts 
+    nerd-fonts.symbols-only
+
+    #tools 
+
+
+   ];
 
 }
