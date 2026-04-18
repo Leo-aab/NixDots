@@ -1,3 +1,5 @@
+{config, pkgs, lib, ... }:
+{
 gtk = {
   enable = true;
   
@@ -10,7 +12,7 @@ gtk = {
     package = pkgs.kora-icon-theme;
     name = "kora";
   };
-
+  gtk4.theme = config.gtk.theme; 
   gtk3.extraConfig = {
     gtk-application-prefer-dark-theme = 1;
   };
@@ -19,3 +21,4 @@ gtk = {
     gtk-application-prefer-dark-theme = 1;
   };
 };
+}
