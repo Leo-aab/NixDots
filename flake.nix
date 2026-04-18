@@ -21,7 +21,7 @@
       {
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;
-        home-manager.users.leo = import ./home.nix;
+        home-manager.users.leo = import ./hm/home.nix;
       }
      ];
      };
