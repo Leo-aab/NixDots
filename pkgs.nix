@@ -1,4 +1,3 @@
-{config, pkgs, lib, ...}:
 {
   config,
   pkgs,
@@ -30,26 +29,11 @@
     wl-clipboard
     libnotify
 
-   #nixos config
-   nil
-   zed-editor
-   helix
-   git   
-   zsh
-   #sway tools
-   pavucontrol
-   #screenshots tools - hypr
-   fuzzel
-   grim
-   slurp
-   wl-clipboard
-   libnotify
-   
-   #thunar
-   thunar
-   thunar-archive-plugin
-   thunar-volman
-   polkit_gnome
-];
+    #thunar
+    thunar
+    thunar-archive-plugin
+    thunar-volman
+    polkit_gnome
+  ];
 
 }
