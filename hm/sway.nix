@@ -8,6 +8,7 @@
           xkb_layout "br"
           xkb_variant "abnt2"
       }
+     workspace 1
      '';
     wrapperFeatures.gtk = true; 
     config = rec {
