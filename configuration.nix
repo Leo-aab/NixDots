@@ -62,7 +62,7 @@
   # User account — set a password with 'passwd' after first boot
   users.users.leo = {
     isNormalUser = true;
-    description = "leo";
+    description = "leo - its me!";
     extraGroups = [ "networkmanager" "wheel" ];
   };
   
@@ -70,17 +70,17 @@
   users.users.leo.shell = pkgs.zsh;
  
   programs.firefox.enable = true;
-
-  # Allow proprietary packages (e.g. drivers, some apps)
-  nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.permittedInsecurePackages = [
+ 
+   nixpkgs.config.permittedInsecurePackages = [
     "ventoy-1.1.10"
   ];
+  # Allow proprietary packages (e.g. drivers, some apps)
+  nixpkgs.config.allowUnfree = true;
   # System-wide packages
   environment.systemPackages = with pkgs; [
-    fastfetch
+   
+  fastfetch
   ];
-
   # Do NOT change this after the initial install — it controls stateful data versions
   system.stateVersion = "25.11";
 }
