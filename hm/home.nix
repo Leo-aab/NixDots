@@ -9,6 +9,8 @@
  ./terminal/zsh.nix
  ./terminal/kitty.nix
  ./services/gtk.nix
+ #pkg configs
+ ./pkg/helix.nix
  ];
 
   home.username = "leo";
