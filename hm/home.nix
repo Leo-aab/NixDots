@@ -11,6 +11,7 @@
  ./services/gtk.nix
  #pkg configs
  ./pkg/helix.nix
+ ./pkg/fuzzel.nix
  ];
 
   home.username = "leo";

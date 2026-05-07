@@ -18,7 +18,7 @@
     #nixos config
     nil
     nixd
-    zed-editor
+    
     helix
     git
     zsh
@@ -43,6 +43,6 @@
     nerd-fonts.symbols-only
 
     #tools 
-    ventoy-full
+    
       ];
 }
