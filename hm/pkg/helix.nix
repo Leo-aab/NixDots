@@ -17,12 +17,9 @@
         };
         insert-final-newline = true;
         line-number = "relative";
-        themes = {
-          carbonfox = {
-            inherits = "carbon";
-          };
-        };
+       
       };
+      theme = "carbonfox";
       };
     };
   }
