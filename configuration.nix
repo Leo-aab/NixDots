@@ -67,7 +67,7 @@
   documentation.nixos.enable = false;
 
   # Printing
-  services.printing.enable = true;
+  #  services.printing.enable = true;
 
   # Audio: PipeWire with PulseAudio compatibility and 32-bit ALSA support
   services.pulseaudio.enable = false;
