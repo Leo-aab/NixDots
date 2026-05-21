@@ -36,7 +36,7 @@
 
     #scheme lang
     sbcl
-    racket
+    # racket
     guile
 
     #sway tools
