@@ -1,0 +1,29 @@
+{ config, pkgs, ... }:
+{
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+    history = {
+      size = 5000;
+      share = true;
+      save = 5000;
+    };
+    shellAliases = {
+      nx = "sudo nixos-rebuild switch --flake";
+      nixop = "sudo nix-store --optimise";
+      fx = "sudo nix flake update --flake .";
+      cln = "sudo nix-collect-garbage -d";
+    };
+    plugins = [
+      {
+        name = "zsh-autocomplete";
+        src = pkgs.zsh-autocomplete;
+        file = "share/zsh-autocomplete/zsh-autocomplete.plugin.zsh";
+      }
+    ];
+
+  };
+
+}
