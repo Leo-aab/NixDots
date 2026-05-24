@@ -24,7 +24,7 @@
         "${modifier}+Shift+q" = "kill";
         "${modifier}+Shift+r" = "restart";
         "${modifier}+d" = "exec ${pkgs.fuzzel}/bin/fuzzel";
-        "${modifier}+f" = "exec ${pkgs.firefox}";
+        "${modifier}+f" = "exec ${pkgs.firefox}/bin/firefox";
         #print
         "Print" =
           "exec ${pkgs.grim}/bin/grim -g \"$(${pkgs.slurp}/bin/slurp)\" - | ${pkgs.wl-clipboard}/bin/wl-copy";
