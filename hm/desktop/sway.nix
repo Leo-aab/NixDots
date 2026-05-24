@@ -24,6 +24,7 @@
         "${modifier}+Shift+q" = "kill";
         "${modifier}+Shift+r" = "restart";
         "${modifier}+d" = "exec ${pkgs.fuzzel}/bin/fuzzel";
+        "${modifier}+f" = "exec ${pkgs.firefox}";
         #print
         "Print" =
           "exec ${pkgs.grim}/bin/grim -g \"$(${pkgs.slurp}/bin/slurp)\" - | ${pkgs.wl-clipboard}/bin/wl-copy";
@@ -31,7 +32,7 @@
 
       #window customizing
       window = {
-        border = 1;
+        border = 2;
         hideEdgeBorders = "smart";
         titlebar = false;
       };
@@ -69,7 +70,7 @@
       bars = [ ];
       startup = [
         { command = "waybar"; }
-        { command = "swaybg -i ${./Pictures/kagura.jpg} -m fill"; }
+        { command = "swaybg -i ${./Pictures/fluid-black.jpg} -m fill"; }
         { command = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"; }
       ];
     };
