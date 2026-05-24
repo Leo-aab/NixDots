@@ -17,7 +17,7 @@
     ./pkg/helix.nix
     ./pkg/fuzzel.nix
     ./pkg/prism.nix
-# ./pkg/spicetify.nix
+    ./pkg/spicetify.nix
   ];
 
   home.username = "leo";
