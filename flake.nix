@@ -14,6 +14,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
 
     };
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -21,6 +25,7 @@
       self,
       nixpkgs,
       home-manager,
+      zen-browser,
       spicetify-nix,
       ...
     }:
@@ -39,6 +44,7 @@
               home-manager.extraSpecialArgs = { inherit inputs; };
               home-manager.useUserPackages = true;
               home-manager.users.leo = import ./hm/home.nix;
+
             }
           ];
         };
