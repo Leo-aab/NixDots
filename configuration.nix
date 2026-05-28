@@ -5,7 +5,7 @@
     ./hardware-configuration.nix
     ./sm/nixld.nix
     ./sm/video-gpu.nix
-
+    #./sm/zswap.nix
   ];
 
   # Boot: using systemd-boot (EFI) with the latest kernel
@@ -100,7 +100,7 @@
   programs.zsh.enable = true;
   users.users.leo.shell = pkgs.zsh;
   programs.firefox.enable = false;
-
+  programs.steam.enable = true;
   # Allow proprietary packages (e.g. drivers, some apps)
   nixpkgs.config.allowUnfree = true;
   # System-wide packages

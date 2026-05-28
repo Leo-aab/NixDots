@@ -13,6 +13,9 @@
     tty-clock
     amberol
     prismlauncher
+
+    steam
+
     steam-run
 
     pfetch-rs
