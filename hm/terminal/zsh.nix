@@ -11,7 +11,7 @@
       save = 5000;
     };
     shellAliases = {
-      nx = "sudo nixos-rebuild switch --flake";
+      nx = "nixos-rebuild switch --flake --sudo";
       nixop = "sudo nix-store --optimise";
       fx = "sudo nix flake update --flake .";
       cln = "sudo nix-collect-garbage -d";
