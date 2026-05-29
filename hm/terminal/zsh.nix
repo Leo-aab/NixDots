@@ -15,6 +15,8 @@
       nixop = "sudo nix-store --optimise";
       fx = "sudo nix flake update --flake .";
       cln = "sudo nix-collect-garbage -d";
+      disk = "nix run nixpkgs#dysk";
+
     };
     plugins = [
       {
