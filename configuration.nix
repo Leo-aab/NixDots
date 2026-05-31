@@ -100,7 +100,7 @@
   programs.zsh.enable = true;
   users.users.leo.shell = pkgs.zsh;
   programs.firefox.enable = false;
-  programs.steam.enable = true;
+
   # Allow proprietary packages (e.g. drivers, some apps)
   nixpkgs.config.allowUnfree = true;
   # System-wide packages
