@@ -15,7 +15,7 @@ to switch this default (my original pc) hardware configuration
 
 and try this:
 ```bash
-sudo nixos-rebuild switch --flake .  
+sudo nixos-rebuild switch --flake .#WeAreStars
 ```
 reboot your system :)) with `reboot`
 
@@ -34,4 +34,6 @@ hm/ - home modules
 configuration.nix - global system config
   ./sm - system modules
 flake.lock && flake.nix - inputs and outputs system unstable version
+
+Scripts - a folder with sh scripts
 ```
