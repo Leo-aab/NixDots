@@ -22,7 +22,7 @@
     ./pkg/helix.nix
     ./pkg/fuzzel.nix
     ./pkg/prism.nix
-    ./pkg/steam.nix
+    #    ./pkg/steam.nix
     ./pkg/spicetify.nix
   ];
 

@@ -14,7 +14,7 @@
     amberol
     prismlauncher
 
-    steam
+    # steam
 
     steam-run
 
