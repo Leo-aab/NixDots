@@ -47,7 +47,7 @@
     waybar
     pavucontrol
     swaybg
-    #screenshots tools - hypr
+    #screenshots tools - sway
     fuzzel
     grim
     slurp
