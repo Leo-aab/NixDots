@@ -70,7 +70,7 @@
       bars = [ ];
       startup = [
         { command = "waybar"; }
-        { command = "swaybg -i ${./Pictures/hades.png} -m fill"; }
+        { command = "swaybg -i ${./Pictures/clouds.png} -m fill"; }
         { command = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"; }
       ];
     };
