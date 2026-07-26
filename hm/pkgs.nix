@@ -14,6 +14,8 @@
     amberol
     prismlauncher
 
+    # image viewer
+    imv
     # steam
 
     #  steam-run
