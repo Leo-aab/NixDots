@@ -26,7 +26,7 @@
         "${modifier}+d" = "exec ${pkgs.fuzzel}/bin/fuzzel";
 
         #print
-        "Print" =
+        "${modifier}+Shift+s" =
           "exec ${pkgs.grim}/bin/grim -g \"$(${pkgs.slurp}/bin/slurp)\" - | ${pkgs.wl-clipboard}/bin/wl-copy";
       };
 
