@@ -16,9 +16,10 @@
 
     # image viewer
     imv
-    # steam
 
-    #  steam-run
+    steam
+
+    steam-run
 
     pfetch-rs
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default

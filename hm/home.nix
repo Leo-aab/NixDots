@@ -23,6 +23,7 @@
     ./pkg/fuzzel.nix
     ./pkg/prism.nix
     # steam pkg
+    ./pkg/steam.nix
     ./pkg/spicetify.nix
   ];
 
