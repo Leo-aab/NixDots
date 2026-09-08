@@ -122,7 +122,10 @@
   };
   # Allow proprietary packages (e.g. drivers, some apps)
   nixpkgs.config.allowUnfree = true;
+  nix.settings.flake-registry = "";
+
   # System-wide packages
+
   environment.systemPackages = with pkgs; [
 
     fastfetch
