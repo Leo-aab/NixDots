@@ -77,5 +77,7 @@
     wavemon
     doggo
 
+    pciutils
+
   ];
 }
