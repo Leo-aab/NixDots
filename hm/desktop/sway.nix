@@ -8,14 +8,16 @@
 
   wayland.windowManager.sway = {
     enable = true;
+
     extraConfig = ''
        input * {
            xkb_layout "br"
            xkb_variant "abnt2"
        }
       workspace 1
-    '';
 
+    '';
+    systemd.variables = [ "--all" ];
     wrapperFeatures.gtk = true;
     config = rec {
       modifier = "Mod4";
@@ -70,7 +72,10 @@
       bars = [ ];
       startup = [
         { command = "waybar"; }
-        { command = "swaybg -i ${./Pictures/clouds.png} -m fill"; }
+        {
+          command = "${pkgs.swaybg}/bin/swaybg -i ${./Pictures/happy.jpg} -m fill";
+          always = true;
+        }
         { command = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"; }
       ];
     };

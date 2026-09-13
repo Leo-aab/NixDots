@@ -57,6 +57,9 @@
     wl-clipboard
     libnotify
     btop
+    #obsstudio
+    obs-studio
+
     #thunar
     thunar
     thunar-archive-plugin

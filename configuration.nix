@@ -78,16 +78,23 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
+
   xdg.portal = {
     enable = true;
     wlr.enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-    config.common.default = [
-      "wlr"
-      "gtk"
+    wlr.settings = {
+      screencast = {
+        chooser_type = "dmenu";
+        chooser_cmd = "${pkgs.slurp}/bin/slurp -f %o -or";
+      };
+    };
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-wlr
+      xdg-desktop-portal-gtk
     ];
-
+    config.common.default = "*";
   };
+
   services.pipewire.wireplumber.extraConfig = {
     "10-max-volume" = {
       "wireplumber.settings" = {

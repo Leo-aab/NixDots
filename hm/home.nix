@@ -39,5 +39,11 @@
       "inode/directory" = [ "thunar.desktop" ];
     };
   };
+  xdg.configFile."xdg-desktop-portal/sway-portals.conf".text = ''
+    [preferred]
+    default=wlr;gtk
+    org.freedesktop.impl.portal.ScreenCast=wlr
+    org.freedesktop.impl.portal.Screenshot=wlr
+  '';
 
 }

@@ -8,25 +8,26 @@
       size = 10;
     };
     settings = {
-      background = "#000000";
-      foreground = "#ebfcef";
-      color0 = "#000000";
-      color1 = "#f01d6e";
-      color2 = "#36c277";
-      color3 = "#ffca45";
-      color4 = "#1e5bf7";
-      color5 = "#9914ff";
-      color6 = "#12e3e3";
-      color7 = "#bababa";
+      background = "#05061E";
+      foreground = "#F4F1E6";
 
-      color8 = "#7d7d7d";
-      color9 = "#f783b0";
-      color10 = "#45ff9c";
-      color11 = "#fcde90";
-      color12 = "#5c89fa";
-      color13 = "#ce8fff";
-      color14 = "#8cf5f5";
-      color15 = "#dbdbdb";
+      color0 = "#0A0F42";
+      color1 = "#C4467A";
+      color2 = "#7A8C3A";
+      color3 = "#D9A62B";
+      color4 = "#2A3FB8";
+      color5 = "#C4467A";
+      color6 = "#5FD3E8";
+      color7 = "#C9CBE8";
+
+      color8 = "#3B4590";
+      color9 = "#E8974A";
+      color10 = "#A8BC5A";
+      color11 = "#F2C55C";
+      color12 = "#5C89E8";
+      color13 = "#E87BAE";
+      color14 = "#8CE8F5";
+      color15 = "#F4F1E6";
 
       confirm_os_window_close = 0;
       scrollback_lines = 10000;

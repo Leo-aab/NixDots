@@ -1,13 +1,18 @@
-{ pkgs, lib, config, ... }:
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}:
 
 {
   programs.fuzzel = {
     enable = true;
     settings = {
       main = {
-        
+
         icons-enabled = "no";
-        
+
         font = "JetBrainsMono Nerd Font:size=12";
         prompt = "$$ ";
         width = 60;
@@ -15,7 +20,7 @@
         horizontal-pad = 20;
       };
       colors = {
-        background = "000000ff";
+        background = "10186Bff";
         text = "ffffffff";
         match = "888888ff";
         selection = "ffffffff";
@@ -29,5 +34,3 @@
     };
   };
 }
-
-
