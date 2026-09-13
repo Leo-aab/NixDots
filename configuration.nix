@@ -84,7 +84,7 @@
     wlr.enable = true;
     wlr.settings = {
       screencast = {
-        chooser_type = "dmenu";
+        chooser_type = "none";
         chooser_cmd = "${pkgs.slurp}/bin/slurp -f %o -or";
       };
     };
