@@ -9,8 +9,8 @@
     enable = true;
 
     theme = {
-      package = pkgs.graphite-gtk-theme;
-      name = "Graphite-Dark";
+      name = "Adwaita-dark";
+      package = pkgs.gnome-themes-extra;
     };
 
     iconTheme = {
