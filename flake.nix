@@ -14,10 +14,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
 
     };
-    zen-browser = {
-      url = "github:0xc000022070/zen-browser-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+
+    helium.url = "github:oxcl/nix-flake-helium-browser";
   };
 
   outputs =
@@ -38,6 +36,7 @@
           inherit system;
           modules = [
             ./configuration.nix
+
             home-manager.nixosModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
