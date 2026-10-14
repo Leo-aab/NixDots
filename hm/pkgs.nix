@@ -19,7 +19,7 @@
 
     steam
 
-    steam-run
+    # steam-run
 
     pfetch-rs
 

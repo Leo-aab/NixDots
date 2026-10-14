@@ -23,7 +23,7 @@
       self,
       nixpkgs,
       home-manager,
-      zen-browser,
+      helium,
       spicetify-nix,
       ...
     }:

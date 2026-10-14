@@ -119,14 +119,15 @@
   programs.firefox.enable = false;
 
   #STEAM GAMES
-  programs.steam = {
-    enable = true;
-    package = pkgs.steam.override {
-      extraEnv = {
-        WLR_SCENE_DISABLE_DIRECT_SCANOUT = "1";
-      };
-    };
-  };
+  #programs.steam = {
+  # enable = true;
+  #package = pkgs.steam.override {
+  # extraEnv = {
+  #  WLR_SCENE_DISABLE_DIRECT_SCANOUT = "1";
+
+  #};
+  #};
+  #};
   # Allow proprietary packages (e.g. drivers, some apps)
   nixpkgs.config.allowUnfree = true;
   nix.settings.flake-registry = "";
